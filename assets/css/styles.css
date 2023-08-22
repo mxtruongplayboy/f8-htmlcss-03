@@ -384,4 +384,129 @@ a {
 /* ================= FEATURE ================= */
 .feature {
     margin-top: 85px;
+    padding: 85px 0;
+}
+
+.feature__row {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+
+.feature__media {
+    width: 48%;
+}
+
+.feature__images {
+    position: relative;
+    padding: 0 58px 121px 0;
+}
+
+.feature__img {
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+    background: lightgray -1.5px 0px / 108.398% 100% no-repeat;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+
+.feature__img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 332px;
+    height: 370px;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.feature__cta {
+    margin-top: 38px;
+}
+
+/* ================= MEMBER ================= */
+.member {
+    padding: 85px 0;
+    text-align: center;
+}
+
+.member__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member__btn {
+    margin-top: 38px;
+}
+
+.member__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 70px;
+    column-gap: 30px;
+}
+
+.member-item__img-bg {
+    padding-top: 28px;
+    border-radius: 6px;
+    background: #eaf6ff;
+    overflow: hidden;
+}
+
+.member-item:hover .member-item__thumb {
+    transform: scale(1.1);
+}
+
+.member-item__thumb {
+    display: block;
+    max-width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #eaf6ff -153.123px -52.895px / 208.148% 188.038% no-repeat;
+    transition: 0.25s;
+}
+
+.member-item__name {
+    color: var(--header-gb);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    margin-top: 12px;
+}
+
+.member-item__title {
+    color: #575f66;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+}
+
+.member__controls {
+    display: flex;
+    justify-content: center;
+    column-gap: 18px;
+    margin-top: 38px;
+}
+
+.member__control-btn {
+    --color-btn: #575f66;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-btn);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--color-btn);
+    background: #fff;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.member__control-btn:hover {
+    color: #fff;
+    background: #2e80ce;
+    border-color: #2e80ce;
 }
