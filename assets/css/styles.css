@@ -57,6 +57,7 @@ a {
 }
 
 .section-desc {
+    margin-top: 18px;
     max-width: 468px;
     color: #575f66;
     font-size: 1.8rem;
@@ -247,21 +248,27 @@ a {
 }
 
 .service__desc {
-    margin: 18px auto 70px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.service-row {
+.service__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 70px;
+}
+
+.service__images {
+    display: flex;
 }
 
 .service__img {
     width: 570px;
     height: 570px;
     border-radius: 12px;
-    background: lightgray 0px -1.3px / 100% 149.93% no-repeat;
     object-fit: cover;
+    background: lightgray 0px -1.3px / 100% 149.93% no-repeat;
 }
 
 .service-item {
@@ -269,11 +276,12 @@ a {
     padding: 22px;
     width: 470px;
     transition: all 0.25s ease 0s;
+    border-radius: 10px;
+    background: #fff;
 }
 
 .service-item:hover {
-    border-radius: 10px;
-    background: #fff;
+    position: relative;
     box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -316,4 +324,64 @@ a {
 
 .service__btn {
     margin-top: 55px;
+}
+
+/* ================= WORK ================= */
+.work {
+    padding: 100px 0;
+    background: #f6fbff;
+}
+
+.work__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-top: 86px;
+}
+
+.work-item {
+    border-radius: 4px;
+    padding: 44px;
+    background: #fff;
+    border: 16px solid #eaf6ff;
+    transition: 0.25s;
+}
+
+.work-item:hover {
+    transform: translateY(-16px);
+    border-color: #2e80ce;
+}
+
+.work-item__heading {
+    color: var(--header-gb);
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38; /* 138.462% */
+    margin-top: 18px;
+}
+
+.work-item__more,
+.work-item__desc {
+    color: #575f66;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.work-item__desc {
+    margin-top: 28px;
+}
+
+.work-item__more {
+    display: inline-block;
+    margin-top: 18px;
+}
+
+.work-item:hover .work-item__more {
+    color: #2e80ce;
+    font-weight: 400;
+}
+
+/* ================= FEATURE ================= */
+.feature {
+    margin-top: 85px;
 }
