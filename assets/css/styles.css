@@ -13,13 +13,20 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
-    font-weight: 300;
 }
 /* ================= COMMON ================= */
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
 }
 
 a {
@@ -61,6 +68,7 @@ a {
     max-width: 468px;
     color: #575f66;
     font-size: 1.8rem;
+    font-weight: 300;
     line-height: 1.67; /* 166.667% */
 }
 
@@ -160,6 +168,7 @@ a {
 .navbar__link {
     color: #c9d2da;
     font-size: 1.6rem;
+    font-weight: 300;
     padding: 4px 21px;
 }
 
@@ -219,6 +228,7 @@ a {
     margin-top: 22px;
     color: #c9d2da;
     font-size: 1.8rem;
+    font-weight: 300;
     line-height: 1.67; /* 166.667% */
 }
 
@@ -346,6 +356,7 @@ a {
     margin-top: 8px;
     color: #575f66;
     font-size: 1.6rem;
+    font-weight: 300;
     line-height: 1.75; /* 175% */
 }
 
@@ -391,6 +402,7 @@ a {
 .work-item__desc {
     color: #575f66;
     font-size: 1.6rem;
+    font-weight: 300;
     line-height: 1.75; /* 175% */
 }
 
@@ -506,6 +518,7 @@ a {
 .member-item__title {
     color: #575f66;
     font-size: 1.4rem;
+    font-weight: 300;
     line-height: 1.86; /* 185.714% */
 }
 
@@ -646,21 +659,182 @@ a {
     color: var(--header-gb);
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 1.63; /* 162.5% */
+    line-height: 1.62; /* 162.5% */
 }
 
 .news-item__desc {
     color: #575f66;
     font-size: 1.4rem;
+    font-weight: 300;
     line-height: 1.71; /* 171.429% */
     margin-top: 10px;
 }
 
 .news-item__more {
-    display: block;
+    display: inline-block;
     color: var(--header-gb);
     font-size: 1.4rem;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 500;
+    line-height: 1.8;
     margin-top: 12px;
+    transition: 0.25s;
+}
+
+.news-item:hover .news-item__more {
+    color: #2e80ce;
+}
+
+/* ================= APPOINTMENT ================= */
+.appointment {
+    margin: 85px 0 170px;
+}
+
+.appointment__inner {
+    padding: 100px 70px;
+    border-radius: 4px;
+    background: #f7fbff;
+    text-align: center;
+}
+
+.appointment__heading {
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.appointment__heading::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: block;
+    content: "";
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+}
+
+.appointment__desc {
+    max-width: 617px;
+    margin: 18px auto 38px;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    margin-top: 85px;
+    background: var(--header-gb);
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+    padding-top: 100px;
+    border-bottom: 1px solid #406181;
+}
+
+.logo {
+    font-family: "Sora", sans-serif;
+}
+
+.footer__desc {
+    color: #a9b3bb;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    margin-top: 20px;
+}
+
+.footer__heading {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+    margin-bottom: 20px;
+}
+
+.footer__list {
+    margin-bottom: 28px;
+}
+
+.footer__item {
+    margin-top: 10px;
+}
+
+.footer__link {
+    color: #a9b3bb;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+    white-space: nowrap;
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 28px;
+}
+
+.footer__social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #2e80ce;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+    color: #fff;
+    background: #2e80ce;
+}
+
+.footer__form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer__input {
+    color: #fff;
+    padding: 0 10px;
+    width: 212px;
+    height: 46px;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background: transparent;
+    outline: none;
+}
+
+.footer__input::placeholder {
+    color: #9ca8b1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
+
+.footer__submit {
+    --height: 46px;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86; /* 185.714% */
+    min-width: 108px;
+    border-radius: 4px;
+    margin-left: 12px;
+}
+
+.footer__copyright {
+    color: #aab3ba;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+    margin-top: 28px;
+    padding-bottom: 42px;
 }
