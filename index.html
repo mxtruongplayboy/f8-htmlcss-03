@@ -91,6 +91,13 @@
             rel="stylesheet"
         />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
@@ -486,10 +493,10 @@
                                 </p>
                             </article>
                         </div>
-                        <div class="member__controls">
-                            <button class="member__control-btn">
+                        <div class="section-controls member__controls">
+                            <button class="section-control-btn">
                                 <svg
-                                    class="member__control-icon"
+                                    class="section-control-icon"
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="6"
                                     height="12"
@@ -505,9 +512,9 @@
                                 </svg>
                             </button>
 
-                            <button class="member__control-btn">
+                            <button class="section-control-btn">
                                 <svg
-                                    class="member__control-icon"
+                                    class="section-control-icon"
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="6"
                                     height="12"
@@ -552,7 +559,7 @@
                                         <img
                                             src="./assets/icon/google-play.svg"
                                             alt="Get in on Google Play"
-                                            class="install_btn-img"
+                                            class="install__btn-img"
                                         />
                                     </a>
 
@@ -560,11 +567,148 @@
                                         <img
                                             src="./assets/icon/apple-store.svg"
                                             alt="Download on the App Store"
-                                            class="install_btn-img"
+                                            class="install__btn-img"
                                         />
                                     </a>
                                 </div>
                             </section>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- News -->
+                <section class="news">
+                    <div class="container">
+                        <div class="news__inner">
+                            <section class="news__content">
+                                <h2 class="section-heading news__heading">
+                                    Read Latest News & Events.
+                                </h2>
+
+                                <a href="#!" class="news__cta">Read All Blog</a>
+
+                                <div class="section-controls news__controls">
+                                    <button class="section-control-btn">
+                                        <svg
+                                            class="section-control-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="6"
+                                            height="12"
+                                            viewBox="0 0 6 12"
+                                            fill="none"
+                                        >
+                                            <path
+                                                d="M5.5 1L0.5 6L5.5 11"
+                                                stroke="currentcolor"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </button>
+
+                                    <button class="section-control-btn">
+                                        <svg
+                                            class="section-control-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="6"
+                                            height="12"
+                                            viewBox="0 0 6 12"
+                                            fill="none"
+                                        >
+                                            <path
+                                                d="M0.5 1L5.5 6L0.5 11"
+                                                stroke="currentcolor"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </section>
+
+                            <div class="news__list">
+                                <!-- Item 1 -->
+                                <article class="news-item">
+                                    <figure class="news-item__thumb">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/news-01.jpg"
+                                                alt="Key Considerations for
+                                                Regulatory Compliant."
+                                                class="news-item__img"
+                                            />
+                                        </a>
+                                    </figure>
+                                    <section class="news-item__body">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="news-item__heading"
+                                            >
+                                                Key Considerations for
+                                                Regulatory Compliant.
+                                            </a>
+                                        </h3>
+                                        <p class="news-item__desc">
+                                            It’s easy to think about medical
+                                            care from a narrow perspective. You
+                                            go to the hospital.
+                                        </p>
+                                        <a href="#!" class="news-item__more"
+                                            >Learn More</a
+                                        >
+                                    </section>
+                                </article>
+
+                                <!-- Item 2 -->
+                                <article class="news-item">
+                                    <figure class="news-item__thumb">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/news-02.jpg"
+                                                alt="What Is Population Health Management?"
+                                                class="news-item__img"
+                                            />
+                                        </a>
+                                    </figure>
+                                    <section class="news-item__body">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="news-item__heading"
+                                            >
+                                                What Is Population Health
+                                                Management?
+                                            </a>
+                                        </h3>
+                                        <p class="news-item__desc">
+                                            It’s easy to think about medical
+                                            care from a narrow perspective. You
+                                            go to the hospital.
+                                        </p>
+                                        <a href="#!" class="news-item__more"
+                                            >Learn More</a
+                                        >
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Appointment -->
+                <section class="appointment">
+                    <div class="container">
+                        <div class="appointment__inner">
+                            <h2 class="section-heading">
+                                Always welcoming new patients
+                            </h2>
+                            <p class="section-desc appointment__desc">
+                                Take control of your dental health and get the
+                                personalized care you deserve. Call (541)
+                                772-8846 to schedule
+                            </p>
+                            <a href="#!" class="btn">Appointment</a>
                         </div>
                     </div>
                 </section>
