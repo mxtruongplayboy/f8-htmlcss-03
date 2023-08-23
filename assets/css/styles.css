@@ -770,7 +770,10 @@ a {
     font-weight: 400;
     line-height: 1.86; /* 185.714% */
     white-space: nowrap;
-    text-decoration: solid;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
 }
 
 .footer__social {
